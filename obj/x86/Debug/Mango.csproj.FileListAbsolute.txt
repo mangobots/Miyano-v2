@@ -1,0 +1,2 @@
+C:\Users\Work Laptop\source\repos\Miyano-v2\obj\x86\Debug\Mango.csprojAssemblyReference.cache
+C:\Users\Work Laptop\source\repos\Miyano-v2\obj\x86\Debug\Mango.csproj.CoreCompileInputs.cache

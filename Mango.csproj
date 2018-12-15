@@ -1,0 +1,147 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{4678CFDA-D639-4E5D-BA40-F63CD15B616B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Mango</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="commands\moderation\autorole.js" />
+    <Content Include="commands\moderation\ban.js" />
+    <Content Include="commands\moderation\clearwarn.js" />
+    <Content Include="commands\moderation\filter.js" />
+    <Content Include="commands\moderation\hackban.js" />
+    <Content Include="commands\moderation\kick.js" />
+    <Content Include="commands\moderation\lockdown.js" />
+    <Content Include="commands\moderation\mute.js" />
+    <Content Include="commands\moderation\prune.js" />
+    <Content Include="commands\moderation\sar.js" />
+    <Content Include="commands\moderation\setuserrole.js" />
+    <Content Include="commands\moderation\unban.js" />
+    <Content Include="commands\moderation\unlock.js" />
+    <Content Include="commands\moderation\unmute.js" />
+    <Content Include="commands\moderation\warn.js" />
+    <Content Include="commands\moderation\warnings.js" />
+    <Content Include="commands\moderation\xpignore.js" />
+    <Content Include="commands\other\background.js" />
+    <Content Include="commands\other\help.js" />
+    <Content Include="commands\other\invite.js" />
+    <Content Include="commands\other\ping.js" />
+    <Content Include="commands\other\prefix.js" />
+    <Content Include="commands\owner\blacklist.js" />
+    <Content Include="commands\owner\checkguilds.js" />
+    <Content Include="commands\owner\eval.js" />
+    <Content Include="commands\owner\user.js" />
+    <Content Include="commands\roles\iam.js" />
+    <Content Include="commands\roles\iamnot.js" />
+    <Content Include="commands\roles\listroles.js" />
+    <Content Include="commands\roles\listuserroles.js" />
+    <Content Include="commands\roles\myrole.js" />
+    <Content Include="commands\social\globalxp.js" />
+    <Content Include="commands\social\globalxplb.js" />
+    <Content Include="commands\social\profile.js" />
+    <Content Include="commands\social\xp.js" />
+    <Content Include="commands\social\xplb.js" />
+    <Content Include="commands\templates.js" />
+    <Content Include="commands\util\avatar.js" />
+    <Content Include="commands\util\emote.js" />
+    <Content Include="commands\util\guildinfo.js" />
+    <Content Include="commands\util\inrole.js" />
+    <Content Include="commands\util\userinfo.js" />
+    <Content Include="events\guildMemberAdd.js" />
+    <Content Include="events\message.js" />
+    <Content Include="events\messageUpdate.js" />
+    <Content Include="events\ready.js" />
+    <Content Include="images\backgrounds\bg_0.png" />
+    <Content Include="images\backgrounds\bg_1.png" />
+    <Content Include="images\backgrounds\bg_2.png" />
+    <Content Include="images\backgrounds\bg_3.png" />
+    <Content Include="images\backgrounds\bg_4.png" />
+    <Content Include="images\overlay.png" />
+    <Content Include="pgsql.js" />
+    <Content Include="start.js" />
+    <Content Include="test.js" />
+    <Content Include="util\colourFinder.js" />
+    <Content Include="util\commandsLoader.js" />
+    <Content Include="util\eventLoader.js" />
+    <Content Include="util\filter.js" />
+    <Content Include="util\permsChecker.js" />
+    <Content Include="util\userFinder.js" />
+    <Content Include="util\xpHandler.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-72e5dbc2e0a231bc55622bcc007ba829c8c19403.idx" />
+    <None Include=".git\objects\pack\pack-72e5dbc2e0a231bc55622bcc007ba829c8c19403.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include="images\profile.pdn" />
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
